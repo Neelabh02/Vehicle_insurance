@@ -38,7 +38,7 @@ class MyException(Exception):
         # Call the base class constructor with the error message
         super().__init__(error_message)
 
-        # Format the detailed error message using the error_message_detail function
+        # Format the detailed error message using the error_message_detail functions
         self.error_message = error_message_detail(error_message, error_detail)
 
     def __str__(self) -> str:
