@@ -3,7 +3,7 @@ from datetime import date
 
 # For MongoDB connection
 DATABASE_NAME = "Proj1"
-COLLECTION_NAME = "Proj1-Data"
+COLLECTION_NAME = "Proj1_Data"
 MONGODB_URL_KEY = "MONGODB_URL"
 
 PIPELINE_NAME: str = ""
@@ -24,12 +24,13 @@ SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
 AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
 REGION_NAME = "us-east-1"
+MODEL_BUCKET_NAME = "my-model-mlopsproj-120569622034-us-east-1-an"
 
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
-DATA_INGESTION_COLLECTION_NAME: str = "Proj1-Data"
+DATA_INGESTION_COLLECTION_NAME: str = "Proj1_Data"
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"
